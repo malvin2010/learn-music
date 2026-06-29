@@ -1,0 +1,23 @@
+services:
+    - type: web
+    name: learn-music-bot
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    autoDeploy: false
+    envVars:
+            - key: PHONE_NUMBER
+        value: 2637xxxxxxx
+            - key: PREFIX
+        value: .
+            - key: OWNER
+        value: Malvin C
+            - key: CHANNEL_LINK
+        value: https://whatsapp.com/channel/0029Vb7Eyki7T8bSNsTtjv1q
+            - key: GROUP_LINK
+        value: https://chat.whatsapp.com/Kahnm6bKMf23mA0Vig5Qo1?s=cl&p=a&mlu=0yki7T8bSNsTtjv1q
+            - key: BANNER_URL
+        value: https://files.catbox.moe/uj95z3.jpg
+            - key: PORT
+        value: 3000
